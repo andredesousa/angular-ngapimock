@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "private": false,
   "scripts": {
-    "ng": "ng",
     "start": "npm-run-all -p serve:api serve:spa",
     "models": "ng-openapi-gen --input openapi/users.yaml --output dist/@api/users",
     "check": "npm run lint && npm run test",
@@ -20,7 +19,9 @@
     "protractor": "protractor e2e/protractor.conf.override.js",
     "protractor:watch": "wait-on http://localhost:4200/ && watch \"npm run protractor\" e2e/src --wait=1",
     "protractor:debug": "node --inspect-brk node_modules/protractor/bin/protractor e2e/protractor.conf.override.js",
-    "build": "ng build"
+    "build": "ng build",
+    "postinstall": "npm run models",
+    "ng": "ng"
   },
   "dependencies": {
     "@angular/animations": "13.2.1",
