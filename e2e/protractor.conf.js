@@ -34,6 +34,14 @@ exports.config = {
     defaultTimeoutInterval: 30000,
     print: function () {},
   },
+  plugins: [
+    {
+      package: '@ng-apimock/protractor-plugin',
+      options: {
+        globalName: 'ngApimock',
+      },
+    },
+  ],
   onPrepare() {
     require('ts-node').register({
       project: require('path').join(__dirname, './tsconfig.json'),
