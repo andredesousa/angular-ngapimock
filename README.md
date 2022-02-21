@@ -1,5 +1,8 @@
 # Angular @ng-apimock
 
+You often need to provide data to support application development.
+This project uses [ng-apimock](https://ngapimock.org/) to provide mock data.
+It allows the developing and testing without the real APIs running.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13 and [Node.js](https://nodejs.org/en/about/releases) version 14.
 
 ## Available npm scripts
@@ -9,6 +12,7 @@ The scripts in [package.json](package.json) file were built with simplicity in m
 The next scripts should be executed in a console inside the root directory:
 
 - `start` - Runs the application.
+- `models` - Generates the entities sources.
 - `check` - Runs all checks.
 - `lint` - Runs several static code analysis.
 - `lint:fix` - Applies lint rules to project code.
@@ -24,6 +28,14 @@ For more details, read the [npm scripts](https://docs.npmjs.com/cli/v8/using-npm
 
 Run `ng serve` for a dev server. Navigate to <http://localhost:4200/>.
 The app will automatically reload if you change any of the source files.
+
+If you create REST APIs and need to build a front-end application that consumes the APIs, the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification) can be used to generate the models and web client in an Angular application using [ng-openapi-gen](https://www.npmjs.com/package/ng-openapi-gen) Node.js module.
+Run `npm rum models` to generate the example used in this project.
+
+This project uses [ng-apimock](https://ngapimock.org/) to provide mock data.
+You can access the development interface for `ng-apimock` navigating to `http://localhost:3000/endpoints`.
+The `ng-apimock` server is automatically started with `start` command but you can run separately by running `npm run serve:api`.
+You can change `ng-apimock` configuration opening [server.js](e2e/server/server.js) file.
 
 ## Linting and formatting code
 
