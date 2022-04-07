@@ -40,14 +40,15 @@ You can change `ng-apimock` configuration opening [server.js](e2e/server/server.
 ## Linting and formatting code
 
 Linters are also excellent tools for finding certain classes of bugs, such as those related to variable scope.
-It is recommend to use tools such as [ESLint](https://eslint.org/), [Prettier](https://prettier.io/) and [stylelint](https://stylelint.io/).
-The formatting of the code is ensured by Prettier.
 
-Run `npm run lint` to analyze your code.
+Use `npm run lint` to analyze your code.
 Many problems can be automatically fixed with `npm run lint:fix`.
+
 Depending on your editor, you may want to add an editor extension to lint and format your code while you type or on-save.
 
 ## Running unit tests
+
+Unit tests are responsible for testing of individual methods or classes by supplying input and making sure the output is as expected.
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 Run `npm run test:watch` to keep executing unit tests in real time while watching for file changes in the background.
@@ -59,6 +60,8 @@ The `x` means exclude and the `f` stands for focused.
 You can see the HTML coverage report opening the [index.html](dist/coverage/index.html) file in your web browser.
 
 ## Running end-to-end tests
+
+The end-to-end tests are responsible for testing scenarios on the product itself, by controlling the browser or the website, regardless of the internal structure to ensure expected behavior.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 In order to only run the protractor end-to-end tests, assuming the frontend is already running, run `npm run protractor`.
