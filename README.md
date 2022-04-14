@@ -26,11 +26,11 @@ For more details, read the [npm scripts](https://docs.npmjs.com/cli/v8/using-npm
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to <http://localhost:4200/>.
+Use `npm run serve` for a dev server. Navigate to <http://localhost:4200/>.
 The app will automatically reload if you change any of the source files.
 
 If you create REST APIs and need to build a front-end application that consumes the APIs, the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification) can be used to generate the models and web client in an Angular application using [ng-openapi-gen](https://www.npmjs.com/package/ng-openapi-gen) Node.js module.
-Run `npm rum models` to generate the example used in this project.
+Use `npm rum models` to generate the example used in this project.
 
 This project uses [ng-apimock](https://ngapimock.org/) to provide mock data.
 You can access the development interface for `ng-apimock` navigating to `http://localhost:3000/endpoints`.
@@ -50,8 +50,8 @@ Depending on your editor, you may want to add an editor extension to lint and fo
 
 Unit tests are responsible for testing of individual methods or classes by supplying input and making sure the output is as expected.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-Run `npm run test:watch` to keep executing unit tests in real time while watching for file changes in the background.
+Use `npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Use `npm run test:watch` to keep executing unit tests in real time while watching for file changes in the background.
 
 If you want to exclude a specific test, simply use `xit()` or `xdescribe()`.
 If you want to run a specific test, use `fit()` or `fdescribe()`.
@@ -63,10 +63,14 @@ You can see the HTML coverage report opening the [index.html](dist/coverage/inde
 
 The end-to-end tests are responsible for testing scenarios on the product itself, by controlling the browser or the website, regardless of the internal structure to ensure expected behavior.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-In order to only run the protractor end-to-end tests, assuming the frontend is already running, run `npm run protractor`.
-Run `npm run protractor:watch` to keep executing your tests while watching for file changes in the background.
+Use `npm run e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+In order to only run the protractor end-to-end tests, assuming the frontend is already running, use `npm run protractor`.
+Use `npm run protractor:watch` to keep executing your tests while watching for file changes in the background.
 You can see the HTML report opening the [index.html](dist/e2e/index.html) file in your web browser.
+
+If you want to exclude a specific test, simply use `xit()` or `xdescribe()`.
+If you want to run a specific test, use `fit()` or `fdescribe()`.
+The `x` means exclude and the `f` stands for focused.
 
 ## Debugging
 
@@ -82,7 +86,7 @@ These functionalities are provided natively or based on plugins.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/app/` directory.
+Use `npm run build` to build the project. The build artifacts will be stored in the `dist/app/` directory.
 
 ## Further help
 
