@@ -1,4 +1,4 @@
-# Angular @ng-apimock
+# Angular e2e-testing using Protractor and @ng-apimock
 
 You often need to provide data to support application development.
 This project uses [ng-apimock](https://ngapimock.org/) to provide mock data.
